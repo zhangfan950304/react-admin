@@ -120,6 +120,7 @@ const { Option } = Select;
                     dataSource={products} 
                     columns={this.columns}
                     pagination={{
+                        current:this.pageNum,
                         defaultPageSize:3,
                         total:pagination,
                         onChange:(pageNum) =>this.getProduct(pageNum)
